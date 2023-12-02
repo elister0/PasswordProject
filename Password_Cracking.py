@@ -1,4 +1,4 @@
-import sys, hashlib
+import sys, hashlib, bcrypt
 
 type = ""
 method = ""
@@ -72,6 +72,9 @@ if method == "Dictionary":
             check = hashed_temp_line.hexdigest()
         elif check_type("PlainText"):
             check = line.rstrip()
+        elif check_type("BCrypt"):
+            temp_hash = password.rstrip().encode('utf-8')
+            bcrypt.checkpw(temp_line, temp_hash)
 
         if check == password:
             print("Password Found: " + line)
