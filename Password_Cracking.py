@@ -74,9 +74,13 @@ if method == "Dictionary":
             check = line.rstrip()
         elif check_type("BCrypt"):
             temp_hash = password.rstrip().encode('utf-8')
-            bcrypt.checkpw(temp_line, temp_hash)
+            check = ""
+            if bcrypt.checkpw(temp_line, temp_hash):
+                print("Password Found: " + line)
+                quit()
 
-        if check == password:
+
+        if check == password and not check_type("BCrypt"):
             print("Password Found: " + line)
             quit()
     print("Password not found in dictionary.")
