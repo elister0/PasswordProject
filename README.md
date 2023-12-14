@@ -35,4 +35,4 @@ python3 Password_Cracking.py d8578edf8458ce06fbc5bb76a58c5ca4 -D -m
 
 python3 Password_Cracking.py 65e84be33532fb784c48129675f9eff3a682b27168c0ea744b2cf58ee02337c5 -s -D
 
-python3 Password_Cracking.py $2y$10$i2Rbs2hRTCf46BwgfD9vg.NZY9JHCDAYhmi6yPKyv4LiG9HzxlPVm -D -b
+python3 Password_Cracking.py '$2y$10$i2Rbs2hRTCf46BwgfD9vg.NZY9JHCDAYhmi6yPKyv4LiG9HzxlPVm' -D -b
