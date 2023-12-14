@@ -6,6 +6,8 @@ A project to crack passwords, like the John the Ripper program
 # Dependencies
 The Top10K Passwords must be downloaded with the program because it depends on the text file to work for Dictionary
 
+The BCrypt function must have apostrophes around the BCrypt Hash
+
 # Command Line Arguments
 types:
 
